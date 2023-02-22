@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7rem;
+}
+nav img,
+.footlogo {
+  width: 15%;
+}
+.capt {
+  text-transform: uppercase;
+  font-family: "Halant", sans-serif;
+  color: black;
+}
+.capt.active {
+  border-bottom: 1px solid rgba(21, 94, 239, 1);
+}
+a {
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 2.4rem;
+}
+#home {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 2rem 5rem 0 7rem;
+  justify-content: space-between;
+  /* height: 10%; */
+}
+.hometxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.homeimg {
+  width: 35%;
+}
+#home img {
+  display: block;
+  filter: grayscale(75%);
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#home h1 {
+  font-size: 3rem;
+}
+#home p {
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  color: rgba(163, 163, 163, 1);
+  margin: 0.5rem 0;
+}
+#home button,
+.hire2 {
+  margin-top: 1rem;
+  background: #155eef;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  color: white;
+  padding: 1rem;
+}
+.hire2 {
+  margin-top: 1.8rem;
+  margin-right: 1rem;
+  padding: 0.9rem 3rem;
+}
+.hire2 a {
+  color: white;
+}
+#home button a {
+  color: white;
+}
+.hire {
+  font-size: 0.8rem;
+}
+.hire,
+.resume {
+  background-color: #fff;
+  font-weight: 700;
+  color: rgba(21, 94, 239, 1);
+  border: 1px solid rgba(21, 94, 239, 1);
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  font-family: "Manrope";
+}
+.resume {
+  margin-top: 1.8rem;
+  padding: 0.8rem 1rem;
+}
+.resume a {
+  color: rgba(21, 94, 239, 1);
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-family: "Halant", serif;
+}
+#about {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7rem;
+}
+.aboutimg {
+  width: 30%;
+}
+#about img {
+  background-color: beige;
+  width: 100%;
+}
+.abouttxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 52%;
+}
+#about p {
+  margin: 1rem 0;
+  font-family: "Manrope";
+  font-size: 1.5rem;
+  color: rgb(3, 3, 3);
+}
+.footer {
+  padding: 0.8rem 7rem;
+  display: flex;
+  font-family: "Manrope";
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(8, 8, 8, 1);
+  color: white;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials a img {
+  width: 20px;
+  margin: 0 1rem;
+}

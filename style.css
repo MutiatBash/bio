@@ -19,6 +19,7 @@ nav img,
   text-transform: uppercase;
   font-family: "Halant", sans-serif;
   color: black;
+  font-weight: 500;
 }
 .capt.active {
   border-bottom: 1px solid rgba(21, 94, 239, 1);
@@ -62,12 +63,17 @@ nav ul li {
 }
 #home h1 {
   font-size: 3rem;
+  /* font-weight: 600; */
 }
 #home p {
   font-family: "Manrope";
   font-size: 1.5rem;
   color: rgba(163, 163, 163, 1);
   margin: 0.5rem 0;
+}
+#home .im {
+  font-family: "Halant", sans-serif;
+  font-weight: 500;
 }
 #home button,
 .hire2 {
@@ -84,11 +90,10 @@ nav ul li {
   margin-right: 1rem;
   padding: 0.9rem 3rem;
 }
-.hire2 a {
-  color: white;
-}
+.hire2 a,
 #home button a {
   color: white;
+  font-family: "Manrope";
 }
 .hire {
   font-size: 0.8rem;
@@ -110,10 +115,12 @@ nav ul li {
 .resume a {
   color: rgba(21, 94, 239, 1);
   font-weight: 700;
+  font-family: "Manrope";
 }
 h1,
 h2 {
   font-family: "Halant", serif;
+  /* font-weight: 500; */
 }
 #about {
   background-color: white;

@@ -5,18 +5,18 @@
   margin: 0;
   box-sizing: border-box;
 }
-.mobile {
-  display: none;
-}
-nav {
+nav.desk {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 7rem;
 }
-.desk img,
+.logo,
 .footlogo {
   width: 15%;
+}
+.menu {
+  display: none;
 }
 .capt {
   text-transform: uppercase;
@@ -59,7 +59,7 @@ nav ul li {
 }
 #home img {
   display: block;
-  filter: grayscale(75%);
+  filter: grayscale(80%);
   margin: 0;
   height: 100%;
   width: 100%;
@@ -177,16 +177,22 @@ h2 {
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 500px) {
-  .moblie {
+  /* .moblie {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .moblie img {
-    width: 20%;
-  }
-  .desk {
+  } */
+  .navul {
     display: none;
+  }
+  nav.desk {
+    padding: 0.5rem 1rem;
+  }
+  .desk .logo {
+    width: 50%;
+  }
+  .menu {
+    display: block;
   }
   #home {
     flex-direction: column-reverse;
@@ -200,12 +206,20 @@ h2 {
   #home h1 {
     font-size: 1.5rem;
   }
+  #home button {
+    width: 100%;
+    padding: 0.8rem 4rem;
+    text-align: center;
+  }
   #about h2 {
     font-size: 1.3rem;
   }
   #home p,
   #about p {
     font-size: 1rem;
+  }
+  #home .im {
+    margin-bottom: 0;
   }
   .homeimg {
     width: 100%;
@@ -227,20 +241,30 @@ h2 {
   }
   .btns {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    width: 100%;
   }
   .hire2 {
-    padding: 0.9rem 2.5rem;
-    margin-top: 0;
+    padding: 0.8rem 2rem;
+    margin: 0;
+    width: 48%;
   }
   .resume {
     margin-top: 0;
+    padding: 0.7rem 0.7rem;
+    width: 48%;
+  }
+  .footer p {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    flex-grow: 1;
   }
   .footer {
     flex-wrap: wrap;
     padding: 1rem;
+
     text-align: center;
   }
   .socials a img {
